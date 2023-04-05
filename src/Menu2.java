@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Menu2 {
     public static void main(String[] args) {
         int choice = 0;
+        String draw;
         Scanner sc = new Scanner(System.in);
         while (choice != 4) {
             System.out.println("1. Print the rectangle");
@@ -14,7 +15,7 @@ public class Menu2 {
             switch (choice) {
                 case 1:
                     for (int h = 3; h > 0; h--) {
-                        String draw = "";
+                        draw = "";
                         for (int w = 5; w > 0; w--) {
                             draw += " * ";
                         }
@@ -23,7 +24,7 @@ public class Menu2 {
                     break;
                 case 2:
                     for (int h = 5; h > 0; h--) {
-                        String draw = "";
+                        draw = "";
                         for (int w = 0; w < h; w++) {
                             draw += " * ";
                         }
@@ -33,7 +34,7 @@ public class Menu2 {
                 case 3:
                     int w = 1;
                     for(int h = 3; h > 0; h--){
-                        String draw = "";
+                        draw = "";
                         for(int w1 = 1; w1 < h; w1++){
                             draw += "   ";
                             }
