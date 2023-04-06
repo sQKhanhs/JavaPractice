@@ -18,14 +18,14 @@ public class FindMax {
             array[i-1] = sc.nextInt();
         }
         System.out.print("Elements in the array: ");
-        for(int i = 0; i < size; i++){
-            System.out.print(array[i] + " ");
+        for(int i : array){
+            System.out.print(i + " ");
         }
 
         int max = -99999;
-        for(int i = 0; i < size; i++){
-            if(array[i] > max){
-                max = array[i];
+        for(int i: array){
+            if(i > max){
+                max = i;
             }
         }
         System.out.printf("%n%-30s","The largest elements in the array is: " + max, "");

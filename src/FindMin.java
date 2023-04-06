@@ -1,15 +1,16 @@
 public class FindMin {
-    public static void main(String[] args){
-        int[] array = {-10,5,3,-11};
+    public static void main(String[] args) {
+        int[] array = {-10, 5, 3, -11};
         System.out.println(findMin(array));
     }
 
-    public static int findMin(int[] array){
-        int min = 99999;
-        for(int i = 0; i < array.length; i++)
-            if (array[i] < min) {
-                min = array[i];
+    public static float findMin(int[] array) {
+        float min = 99999;
+        for (int j : array) {
+            if (j < min) {
+                min = j;
             }
+        }
         return min;
     }
 }
