@@ -1,14 +1,23 @@
+import java.util.Scanner;
+
 public class FindMin {
     public static void main(String[] args) {
-        int[] array = {-10, 5, 3, -11};
-        System.out.println(findMin(array));
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter size:");
+        int size = input.nextInt();
+        int[] array = new int[size];
+        for (int index = 0; index < array.length; index++) {
+            System.out.print("Enter element " + index + ": ");
+            array[index] = input.nextInt();
+        }
+        System.out.println("Lowest elements is " + findMin(array));
     }
 
-    public static float findMin(int[] array) {
-        float min = 99999;
-        for (int j : array) {
-            if (j < min) {
-                min = j;
+    public static int findMin(int[] array) {
+        int min = array[0];
+        for (int element : array) {
+            if (element < min) {
+                min = element;
             }
         }
         return min;
