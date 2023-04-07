@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class EraseElement {
     public static void main(String[] args){
-        int[] array = {1,2,3,4,5,6,7};
+        int[] array = {1,2,3,4,5,6,7,8,9};
         System.out.println("Which element do you want to remove?");
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
@@ -16,7 +16,7 @@ public class EraseElement {
 
         int[] array2 = new int[array.length - 1];
         System.arraycopy(array, 0, array2, 0, index);
-        System.arraycopy(array, index + 1, array2, index, array.length - index - 1);
+        System.arraycopy(array, index + 1, array2, index, array2.length - index);
         for(int i: array2){
             System.out.print(i + " ");
         }

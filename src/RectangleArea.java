@@ -14,5 +14,8 @@ public class RectangleArea {
         float area = width * height;
         System.out.println("Rectangle area is: " + area);
     }
-
 }
+
+
+
+
