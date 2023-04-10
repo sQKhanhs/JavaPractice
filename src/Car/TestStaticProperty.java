@@ -2,7 +2,7 @@ package Car;
 
 public class TestStaticProperty {
 
-    public static void main(String[] args) {
+    public static void mainC(String[] args) {
 
         Car car1 = new Car("Mazda 3","Skyactiv 3");
 
