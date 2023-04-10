@@ -1,6 +1,9 @@
 package Circle;
 
 public class Circle {
+    public class Circle2{
+
+    }
     private double radius = 1.0;
     private String color = "red";
 

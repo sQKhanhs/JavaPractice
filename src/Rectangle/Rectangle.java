@@ -8,7 +8,7 @@ public class Rectangle {
         this.height = height;
     }
 
-    public String display() {
+    public String toString() {
         return "Rectangle width is " + this.width + " and height is " + this.height;
     }
 

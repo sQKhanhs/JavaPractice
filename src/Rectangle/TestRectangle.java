@@ -11,7 +11,7 @@ import java.util.Scanner;
             System.out.println("Enter height");
             int height = input.nextInt();
             Rectangle rectangle = new Rectangle(width,height);
-            System.out.println(rectangle.display());
+            System.out.println(rectangle);
             System.out.println("Rectangle's perimeter: " + rectangle.getPerimeter());
             System.out.println("Rectangle's area: " + rectangle.getArea());
         }
