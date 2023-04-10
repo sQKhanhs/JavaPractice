@@ -13,7 +13,7 @@ public class AddElement {
         }
 
         int[] array2 = new int[array.length - index];
-        System.arraycopy(array, index, array2,0, array.length);
+        System.arraycopy(array, index, array2,0, array2.length);
         array[index] = x;
         for(int i = index + 1, j = 0; i < array.length; i++, j++){
             array[i] = array2[j];

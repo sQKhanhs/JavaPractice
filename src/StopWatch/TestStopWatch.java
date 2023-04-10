@@ -5,7 +5,7 @@ public class TestStopWatch {
     {
         SelectionSort ob = new SelectionSort();
         StopWatch watch = new StopWatch();
-        int arr[] = new int[10000];
+        int arr[] = new int[100000];
         watch.start();
         System.out.println("Start time: " + watch.getStartTime());
         for(int index = 0; index < arr.length; index++){
