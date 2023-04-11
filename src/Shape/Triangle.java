@@ -3,17 +3,15 @@ package Shape;
 public class Triangle extends Shape {
     double side1 = 1.0;
     double side2 = 1.0;
-    double side3 = 1.0;
-    double height;
+    double side3 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
 
     Triangle() {
     }
 
-    Triangle(double side1, double side2, double side3, double height) {
+    Triangle(double side1, double side2) {
         this.side1 = side1;
         this.side2 = side2;
-        this.side3 = side3;
-        this.height = height;
+        this.side3 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
     }
 
     public double getSide1() {
@@ -44,13 +42,19 @@ public class Triangle extends Shape {
         return (side1 + side2 + side3);
     }
 
+    public double getHeight() {
+        double s = getPerimeter() / 2;
+        double height;
+        return height = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+    }
+
     public double getArea() {
         if (side2 > side1 && side2 > side3) {
-            return (side2 * height) / 2;
+            return (side2 * getHeight()) / 2;
         } else if (side1 > side3 && side1 > side2) {
-            return (side1 * height) / 2;
+            return (side1 * getHeight()) / 2;
         } else {
-            return (side3 * height) / 2;
+            return (side3 * getHeight()) / 2;
         }
     }
 
