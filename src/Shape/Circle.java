@@ -1,7 +1,7 @@
 package Shape;
 
 public class Circle extends Shape {
-    double radius = 1.0;
+    private double radius = 1.0;
 
     public Circle() {
     }
@@ -30,6 +30,6 @@ public class Circle extends Shape {
     }
     @Override
     public String toString(){
-        return "A circle with radius " + radius + ", which is a" + super.toString();
+        return "A circle with radius " + radius + ", which is " + super.toString();
     }
 }
