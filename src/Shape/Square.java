@@ -1,6 +1,6 @@
 package Shape;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle implements Resizeable{
     public Square(){
     }
     public Square(double side){
@@ -19,5 +19,9 @@ public class Square extends Rectangle{
     @Override
     public String toString(){
         return "A square with side " + getSide() + ", which is " + super.toString();
+    }
+    @Override
+    public void resize(double percent) {
+        setSide(getSide() * percent);
     }
 }
