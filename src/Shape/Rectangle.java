@@ -1,6 +1,6 @@
 package Shape;
 
-public class Rectangle extends Shape implements Resizeable {
+public class Rectangle extends Shape implements Resizeable, Colorable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -44,5 +44,10 @@ public class Rectangle extends Shape implements Resizeable {
     public void resize(double percent) {
         this.length = this.length * percent;
         this.width = this.width * percent;
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color rectangle's area");
     }
 }

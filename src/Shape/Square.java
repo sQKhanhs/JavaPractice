@@ -24,4 +24,9 @@ public class Square extends Rectangle implements Resizeable{
     public void resize(double percent) {
         setSide(getSide() * percent);
     }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides");
+    }
 }
