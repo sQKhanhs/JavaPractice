@@ -1,13 +1,16 @@
 package Shopee.Service.Impl;
 
+import Shopee.Comparator.ProductComparator;
 import Shopee.Entity.Category;
 import Shopee.Entity.Product;
 import Shopee.Service.ProductService;
-
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class ProductServiceimp implements ProductService {
-    ArrayList<Product> products = new ArrayList<>();
+    static ArrayList<Product> products = new ArrayList<>();
     @Override
     public void add(Product product, String categoryID) {
         if((product.getCategoryId()) == categoryID){
@@ -19,8 +22,13 @@ public class ProductServiceimp implements ProductService {
 
     @Override
     public void getAll() {
-    for(Product product: products){
-        System.out.println(product);
+        for (Product product : products) {
+            System.out.println(product);
+        }
     }
+
+    @Override
+    public void sortList() {
+            Collections.sort(products, new ProductComparator());
     }
 }

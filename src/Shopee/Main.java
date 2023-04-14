@@ -15,8 +15,10 @@ public class Main {
         categoryService.add();
         categoryService.getAll();
 
-        productService.add(new Product("1","Gucci White Shirts"), "1");
+        productService.add(new Product("5","Gucci White Shirts"), "5");
         productService.add(productTest, "3");
+        productService.sortList();
         productService.getAll();
+
     }
 }
