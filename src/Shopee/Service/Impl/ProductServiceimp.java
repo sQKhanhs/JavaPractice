@@ -31,4 +31,24 @@ public class ProductServiceimp implements ProductService {
     public void sortList() {
             Collections.sort(products, new ProductComparator());
     }
+
+    @Override
+    public void remove(String productName) {
+        for (Product product : products) {
+            if(product.getName() == productName){
+                products.remove(product);
+            }
+        }
+    }
+
+    @Override
+    public void find(String productName) {
+        for (Product product : products) {
+            if(product.getName() == productName){
+                System.out.println("Product at index " + products.indexOf(product));
+            } else{
+                System.out.println("No product found");
+            }
+        }
+    }
 }
