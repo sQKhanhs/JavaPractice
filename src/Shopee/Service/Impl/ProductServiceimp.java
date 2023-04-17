@@ -4,17 +4,15 @@ import Shopee.Comparator.ProductComparator;
 import Shopee.Entity.Category;
 import Shopee.Entity.Product;
 import Shopee.Service.ProductService;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
+
+import java.util.*;
 
 public class ProductServiceimp implements ProductService {
-    static ArrayList<Product> products = new ArrayList<>();
+    static LinkedList<Product> products = new LinkedList<Product>();
     @Override
     public void add(Product product, String categoryID) {
         if((product.getCategoryId()) == categoryID){
-            products.add(new Product(categoryID, product.getName()));
+            products.addFirst(new Product(categoryID, product.getName()));
         } else {
             System.out.println("Can't add product");
         }

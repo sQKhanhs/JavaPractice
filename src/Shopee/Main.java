@@ -18,6 +18,7 @@ public class Main {
 
         productService.add(new Product("5","Gucci White Shirts"), "5");
         productService.add(productTest, "3");
+        productService.add(productTest2, "2");
         productService.sortList();
         productService.remove("Asus Laptop");
         productService.find("Gucci White Shirts");
