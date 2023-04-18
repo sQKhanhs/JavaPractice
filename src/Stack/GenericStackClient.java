@@ -53,7 +53,7 @@ public class GenericStackClient {
     public void stackOfStringsReverse() {
         MyGenericStack<String> stack = new MyGenericStack<>();
         MyGenericStack<String> stack2 = new MyGenericStack<>();
-        String test = "ABCDEF";
+        String test = "ABC DEF";
         String[] part = test.split("(?!^)");
         for (String word : part)
             stack.push(word);

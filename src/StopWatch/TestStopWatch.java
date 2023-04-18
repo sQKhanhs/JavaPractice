@@ -9,7 +9,7 @@ public class TestStopWatch {
         watch.start();
         System.out.println("Start time: " + watch.getStartTime());
         for(int index = 0; index < arr.length; index++){
-            arr[index] = (int) (Math.random() * 100000);
+            arr[index] = (int) (Math.random() * 1000000);
         }
         ob.sort(arr);
         watch.end();
