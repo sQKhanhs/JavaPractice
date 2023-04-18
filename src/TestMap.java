@@ -20,6 +20,7 @@ public class TestMap {
         linkedHashMap.put("Anderson", 31);
         linkedHashMap.put("Lewis", 32);
         linkedHashMap.put("Cook", 29);
+        System.out.println(linkedHashMap);
         System.out.println("The age for " + "Lewis is " + linkedHashMap.get("Lewis"));
 
         for (Map.Entry<String,Integer> entry : treeMap.entrySet())
