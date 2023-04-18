@@ -5,5 +5,6 @@ public class Main {
         GenericStackClient stackClient = new GenericStackClient();
         stackClient.stackOfStrings();
         stackClient.stackOfIntegers();
+        stackClient.stackOfStringsReverse();
     }
 }

@@ -5,26 +5,35 @@ import java.util.LinkedList;
 
 public class MyGenericStack<T> {
     private LinkedList<T> stack;
-    public MyGenericStack(){
+
+    public LinkedList<T> getStack() {
+        return stack;
+    }
+
+    public MyGenericStack() {
         stack = new LinkedList<>();
     }
-    public void push(T element){
+
+    public void push(T element) {
         stack.addFirst(element);
     }
-    public T pop(){
-        if(isEmpty()){
+
+    public T pop() {
+        if (isEmpty()) {
             throw new EmptyStackException();
-        } else{
+        } else {
             return stack.removeFirst();
         }
     }
-    public int size(){
+
+    public int size() {
         return stack.size();
     }
-    public boolean isEmpty(){
-        if(size() == 0){
+
+    public boolean isEmpty() {
+        if (size() == 0) {
             return true;
-        } else{
+        } else {
             return false;
         }
     }
